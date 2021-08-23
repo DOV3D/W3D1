@@ -9,10 +9,19 @@ class Array
         self
     end
 
-    def my_select()
-
+    def my_select(&prc)
+        arr = []
+        self.my_each do |ele|
+            arr << ele if prc.call(ele)
+        end
+        return arr
     end
     
 end
 
-p [1,2,3].my_each {|el| p el}
+#p [1,2,3].my_each {|el| p el}
+
+
+a = [1, 2, 3]
+p a.my_select { |num| num > 1 } # => [2, 3]
+p a.my_select { |num| num == 4 } # => []
