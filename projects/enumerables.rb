@@ -10,9 +10,9 @@ class Array
     end
 
     def my_select()
-
+        
     end
-    
+
 end
 
 p [1,2,3].my_each {|el| p el}
