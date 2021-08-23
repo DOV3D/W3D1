@@ -18,6 +18,7 @@ class Array
         return arr
     end
 
+<<<<<<< HEAD
     def my_reject(&prc)       
         arr =[]
         self.my_each { |ele| arr << ele unless prc.call(ele)}
@@ -67,6 +68,8 @@ class Array
         
     end
    
+=======
+>>>>>>> 1652aa589e5aa9b1460917703b69d4b1617cc42e
 end
 
 a = [ "a", "b", "c", "d" ]
